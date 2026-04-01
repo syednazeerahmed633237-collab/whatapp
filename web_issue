@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WhatsApp Update Notice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #e5ddd5;
+      text-align: center;
+      padding: 50px;
+    }
+    .box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    button {
+      background: #25D366;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1ebe5d;
+    }
+    #prank {
+      display: none;
+      margin-top: 20px;
+      font-size: 18px;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h2>⚠️ WhatsApp Account Alert</h2>
+  <p>Your account will be upgraded to <b>Premium Paid Plan</b> from today.</p>
+  <p>Monthly charge: <b>₹499</b></p>
+  <p>Click below to cancel the upgrade.</p>
+
+  <button onclick="showPrank()">Cancel Upgrade</button>
+
+  <div id="prank">
+    😂 APRIL FOOL! 😂<br>
+    Got you!
+  </div>
+</div>
+
+<script>
+  function showPrank() {
+    document.getElementById("prank").style.display = "block";
+  }
+</script>
+
+</body>
+</html>
